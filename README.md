@@ -1,12 +1,4 @@
-You're right; the script does not explicitly include a command to create a specific PostgreSQL user for Odoo. In a standard Odoo installation, the script should ensure that a PostgreSQL user corresponding to the Odoo system user is created, as Odoo uses this user to connect to its PostgreSQL database. This can be addressed by adding the following line right after the PostgreSQL installation steps in the script:
-
-```bash
-sudo su - postgres -c "createuser -s $OE_USER"
-```
-
-This command switches to the `postgres` user and runs the `createuser` command to create a new user with the same name as the Odoo system user (`$OE_USER`), granting it superuser privileges in PostgreSQL. This step is crucial for allowing Odoo to create, delete, and manage its databases.
-
-### GitHub README.md Content for the Odoo Installation Script
+Odoo Installation Script
 
 ```markdown
 # Odoo 17 Installation Script
