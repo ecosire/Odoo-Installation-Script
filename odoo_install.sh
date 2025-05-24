@@ -1,7 +1,7 @@
 #!/bin/bash
 ################################################################################
 # Script for installing Odoo 18 on Ubuntu 22.04 LTS and 24.04 LTS
-# Author: Based on scripts by Yenthe Van Ginneken
+# Author: Based on scripts by ecosire
 # Updated for Odoo 18 with enhancements for security, durability, and configurability.
 #-------------------------------------------------------------------------------
 # This script will install Odoo on your Ubuntu server. It can install multiple Odoo
